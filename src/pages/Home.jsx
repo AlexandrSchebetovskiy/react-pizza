@@ -20,7 +20,7 @@ const Home = () => {
   const [sortType, setSortType] = React.useState({ name: 'популярности', sortProp: 'rating' });
   const [order, setOrder] = React.useState(0);
   const [currentPage, setCurrentPage] = React.useState(1);
-
+  
   const createQueryString = () => {
     let qs =
       url + `?page=${currentPage}&limit=4&sortBy=${sortType.sortProp}&order=${orderMap[order]}`;
